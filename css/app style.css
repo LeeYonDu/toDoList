@@ -1,0 +1,55 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  #login-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+    text-align: center;
+  }
+  
+
+  #greeting {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    text-decoration: underline wavy rgb(255, 245, 227);
+    
+  }
+
+  #clock {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    
+  }
+
+  #todo-form {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    width: auto;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    color: white;
+    text-align: center;
+      
+  }
+  #todo-form input {
+    text-align: center;
+  }
