@@ -1,9 +1,14 @@
-body {
+  body {
     width: 100vw;
     height: 100vh;
     margin: 0;
     overflow: hidden;
   }
+
+  .hidden {
+    display: none;
+
+}
 
   #login-form {
     position: fixed;
@@ -12,6 +17,9 @@ body {
     transform: translate(-50%, -50%);
     font-size: 24px;
     color: white;
+    text-align: center;
+  }
+  #login-form input {
     text-align: center;
   }
   
@@ -25,15 +33,14 @@ body {
     color: white;
     text-align: center;
     text-decoration: underline wavy rgb(255, 245, 227);
-    
   }
 
   #clock {
     position: absolute;
-    top: 40%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 28px;
+    font-size: 26px;
     color: white;
     text-align: center;
     
@@ -41,15 +48,55 @@ body {
 
   #todo-form {
     position: absolute;
-    top: 47%;
+    top: 48%;
     left: 50%;
     width: auto;
     transform: translate(-50%, -50%);
     font-size: 28px;
     color: white;
     text-align: center;
+    opacity: 0.6;
+    
       
   }
   #todo-form input {
     text-align: center;
+    border-radius: 20px;
+    border: 1px solid transparent;
+  }
+
+  #quote {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: auto;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: rgb(255, 245, 227);
+    text-align: center;
+    text-decoration: underline;
+    font-family: caveat, sans-serif;
+  }
+
+  #weather {
+    position: absolute;
+    top: 45.5%;
+    left: 50%;
+    width: auto;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    color: rgb(255, 245, 227);
+    text-align: center;
+    
+  }
+
+  #todo-list {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    width: auto;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    color: rgb(241, 237, 231);
+    opacity: 0.8;
   }
