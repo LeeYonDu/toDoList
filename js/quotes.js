@@ -31,6 +31,6 @@ const quotes = [
     },
     
 ];
-const quote = document.querySelector("#quote span:first-child");
+
 const todaysQuote = quotes[Math.floor(Math.random()*quotes.length)];
 quote.innerText = todaysQuote.quote;
