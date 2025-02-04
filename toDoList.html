@@ -6,10 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="css/app style.css"/>
         <title>toDoList</title>
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    
+    
     </head>
     <body> 
         <form class="hidden" id="login-form">
+            <h1 id ="welcome">"Welcome!"</h1>
         <input 
         required
         maxlength="15"
@@ -18,18 +26,23 @@
         <input type = "submit" value = "Log In"/>
         </form>
 
-        <h1 id="greeting" class = "hidden"></h1>
-        <h2 id="clock">00:00:00</h2>
-<form id="todo-form">
-    <input required type="text" placeholder="Write a To Do and Press Enter.">
-</form>
-<ul id="todo-list">
-   
-</ul>
-        <div id = "quote">
+        <h1 id="greeting" class="hidden"></h1>
+        <div id="clock" class="hidden">
+        <h2>00:00:00</h2>
+        </div>
+        
+        <form id="todo-form" class="hidden">
+        <input required type="text" placeholder="Write a To Do and Press Enter." class = "second">
+        </form>
+        
+        <div id="todo-list" class="hidden">
+        <ul>
+        </ul>
+        </div>
+        <div id = "quote" class="hidden">
             <span></span>
         </div>
-        <div id="weather">
+        <div id="weather" class="hidden">
             <span></span>
             <span></span>
         </div>
@@ -39,6 +52,6 @@
         <script src="js/background.js"></script>
         <script src="js/todo.js"></script>
         <script src="js/weather.js"></script>
-        
+       
     </body>
 </html>
