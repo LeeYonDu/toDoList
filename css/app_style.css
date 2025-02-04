@@ -21,8 +21,15 @@
   }
   #login-form input {
     text-align: center;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+    opacity: 0.3;
   }
-  
+
+  #login-form input::placeholder {
+    color: black;
+  }
 
   #greeting {
     position: absolute;
@@ -91,12 +98,44 @@
   }
 
   #todo-list {
-    position: absolute;
+    position: relative;
     top: 52%;
-    left: 50%;
+    left: 25%;
     width: auto;
-    transform: translate(-50%, -50%);
+    transform: translateY(0);
     font-size: 13px;
-    color: rgb(241, 237, 231);
+    color: black;
     opacity: 0.8;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    
   }
+  
+  #todo-list li {
+    position: relative;
+    list-style-type: none; 
+    padding: 0;
+    
+
+  }
+
+  #todo-list li::before {
+    content: "-"; 
+    margin-right: 10px; 
+    margin-left: 10px;
+    color: black; 
+  }
+
+  button {
+    padding: 4px 6px;
+    opacity: 0.8;
+    color: black; 
+    border: 1px solid transparent;
+    border-radius: 12px; 
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+  }
+
+  
