@@ -2,8 +2,9 @@
     width: 100vw;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
+    
   }
+  
 
   .hidden {
     display: none;
@@ -18,44 +19,59 @@
     font-size: 24px;
     color: white;
     text-align: center;
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
   }
   #login-form input {
     text-align: center;
     border-radius: 20px;
     border: 2px solid transparent;
     transition: border-color 0.3s ease-in-out;
-    opacity: 0.3;
+    opacity: 0.55;
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
+    
   }
 
   #login-form input::placeholder {
     color: black;
+    font-family: sans-serif;
+    
   }
 
   #greeting {
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 48px;
     color: white;
     text-align: center;
     text-decoration: underline wavy rgb(255, 245, 227);
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
   #clock {
     position: absolute;
-    top: 42%;
+    top: 27%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 26px;
     color: white;
     text-align: center;
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
     
   }
 
   #todo-form {
     position: absolute;
-    top: 48%;
+    top: 33%;
     left: 50%;
     width: auto;
     transform: translate(-50%, -50%);
@@ -63,6 +79,9 @@
     color: white;
     text-align: center;
     opacity: 0.6;
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
     
       
   }
@@ -74,7 +93,7 @@
 
   #quote {
     position: absolute;
-    top: 90%;
+    top: 97%;
     left: 50%;
     width: auto;
     transform: translate(-50%, -50%);
@@ -87,7 +106,7 @@
 
   #weather {
     position: absolute;
-    top: 45.5%;
+    top: 30%;
     left: 50%;
     width: auto;
     transform: translate(-50%, -50%);
@@ -99,23 +118,24 @@
 
   #todo-list {
     position: relative;
-    top: 52%;
+    top: 35%;
     left: 25%;
-    width: auto;
     transform: translateY(0);
     font-size: 13px;
-    color: black;
+    color: white;
     opacity: 0.8;
-    background-color: rgba(0,0,0,0.2);
-    border-radius: 10px;
     
+  
   }
   
   #todo-list li {
     position: relative;
     list-style-type: none; 
-    padding: 0;
-    
+    padding: 0.5px;
+    background-color: rgba(0, 0, 0, 0.15);
+    max-width: 50%;
+    border-radius: 10px;
+    margin-bottom: 5px;
 
   }
 
@@ -123,19 +143,22 @@
     content: "-"; 
     margin-right: 10px; 
     margin-left: 10px;
-    color: black; 
+    color: white;
+  
   }
 
   button {
-    padding: 4px 6px;
-    opacity: 0.8;
+    position: absolute;
+    left: 102%;
+    padding: 4px 7px;
+    opacity: 0.6;
     color: black; 
     border: 1px solid transparent;
     border-radius: 12px; 
     font-size: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-left: 10px;
+    margin-right: 10px;
   }
 
   
